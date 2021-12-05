@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="@string/sua_thong_tin_nhan_vien"
+        android:background="@color/orange"/>
+
+    <LinearLayout
+        android:weightSum="9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/ho_ten_detail"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_weight="4"
+                    android:id="@+id/edtEditName_user"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/orange"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/orange"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="@string/nhap_ho_ten"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tuoi_detail"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_weight="4"
+                    android:id="@+id/edtEditAge_user"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:inputType="number"
+                    android:textColor="@color/orange"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/orange"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="@string/nhap_tuoi"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/sdt_detail"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_weight="4"
+                    android:id="@+id/edtEditPhone_user"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/orange"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/orange"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="@string/nhap_sdt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/cmtnd_detail"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_weight="4"
+                    android:id="@+id/edtEditIdentityCard_user"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/orange"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/orange"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="@string/nhap_cmtnd"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/dia_chi_detail"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_weight="4"
+                    android:id="@+id/edtEditAddress_user"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/orange"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/orange"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="@string/nhap_dia_chi"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbStatusOn_editUser"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/orange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:checked="true"
+                        android:textColor="@color/orange"
+                        android:text="@string/trang_thai_hoat_dong" />
+
+                    <RadioButton
+                        android:id="@+id/rbStatusPause_editUser"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:text="@string/trang_thai_tam_dung"/>
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btnEdit_user"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@null"
+                android:text="@string/thay_doi" />
+
+            <Button
+                android:id="@+id/btnQuitDiaLogEdit_user"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@null"
+                android:text="@string/thoat" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

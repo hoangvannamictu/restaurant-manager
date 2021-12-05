@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="@string/them_ban"
+        android:background="@color/orange"/>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtAddId_table"
+            android:textSize="25sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/orange"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColorHint="@color/orange"
+            android:background="@drawable/custom_edittext"
+            android:hint="@string/nhap_ma_ban"/>
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtAddType_table"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/orange"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColorHint="@color/orange"
+            android:background="@drawable/custom_edittext"
+            android:hint="@string/nhap_loai_ban"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/tvAddStatus_table"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/trang_thai"
+                android:textColor="@color/orange"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btnAddChooseStatus_table"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@null"
+                android:text="@string/lua_chon"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd_table"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/them_ban" />
+
+        <Button
+            android:id="@+id/btnQuitDiaLogAdd_table"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/thoat" />
+    </LinearLayout>
+
+</LinearLayout>

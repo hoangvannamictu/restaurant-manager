@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleDialog_orderFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="@string/them_so_luong"
+        android:background="@color/orange"/>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvAmountTitle_orderfood"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/con"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:id="@+id/tvDialogAmount_orderFood"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="128"
+                android:textSize="20sp"
+                android:textColor="@color/orange"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevious_amountFood"
+                android:src="@drawable/ic_previous_24"
+                android:layout_weight="1"
+                app:background="@null"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/edtChoose_AmountFood"
+                android:textSize="25sp"
+                android:textColor="@color/orange"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/orange"
+                android:background="@drawable/custom_edittext"
+                android:hint="@string/nhap_so_luong"/>
+
+            <ImageButton
+                android:id="@+id/btnNext_amountFood"
+                android:src="@drawable/ic_next_24"
+                android:layout_weight="1"
+                app:background="@null"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd_amountFood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/them" />
+
+        <Button
+            android:id="@+id/btnQuitDiaLog_amountFood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/thoat" />
+    </LinearLayout>
+
+</LinearLayout>

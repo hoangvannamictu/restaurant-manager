@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/dang_trong"
+        android:id="@+id/menuStatusEmpty_table"/>
+
+    <item
+        android:title="@string/dang_bao_tri"
+        android:id="@+id/menuStatusRepair_table"/>
+
+    <item
+        android:title="@string/da_dat_truoc"
+        android:id="@+id/menuStatusWaiting_table"/>
+</menu>

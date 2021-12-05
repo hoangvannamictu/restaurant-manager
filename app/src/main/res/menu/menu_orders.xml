@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/thanh_toan"
+        android:id="@+id/menu_popup_payment"/>
+
+    <item
+        android:title="@string/dat_ban"
+        android:id="@+id/menu_popup_order_table"/>
+
+    <item
+        android:title="@string/goi_mon"
+        android:id="@+id/menu_popup_order_food"/>
+
+    <item
+        android:title="@string/doi_ban"
+        android:id="@+id/menu_popup_change_table"/>
+
+    <item
+        android:title="@string/sua_mon"
+        android:id="@+id/menu_popup_edit_food"/>
+</menu>

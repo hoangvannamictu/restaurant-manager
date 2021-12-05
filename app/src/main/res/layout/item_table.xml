@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutEdit_table"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sua_thongtin"
+                    android:textColor="@color/orange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDelete_table"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xoa"
+                    android:textColor="@color/orange"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvId_table"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/tvStatus_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/da_dat_truoc"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/orange"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:id="@+id/imgStatus_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_table_waiting_64" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLoaiBan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loai_ban_capslock"
+                    android:paddingRight="5dp"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/orange"/>
+
+                <TextView
+                    android:id="@+id/tvType_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:textSize="15sp"
+                    android:textColor="@color/orange"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</androidx.cardview.widget.CardView>

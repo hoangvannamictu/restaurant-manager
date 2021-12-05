@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "411711912015",
+    "project_id": "quan-ly-quan-lau-trung-khanh",
+    "storage_bucket": "quan-ly-quan-lau-trung-khanh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411711912015:android:eabb51c145b81cc8b3d23a",
+        "android_client_info": {
+          "package_name": "test1.com.quanlyquanlautrungkhanh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411711912015-8ru3hpc5b57a8c2vaaa7gekmlbtvishm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTlM5Miqok5Pq4MzERQzciQgFDysJ13tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411711912015-8ru3hpc5b57a8c2vaaa7gekmlbtvishm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/tag_do_an"
+        android:id="@+id/menuTagFood_doan"/>
+
+    <item
+        android:title="@string/tag_do_uong"
+        android:id="@+id/menuTagFood_douong"/>
+
+    <item
+        android:title="@string/tag_hoa_qua"
+        android:id="@+id/menuTagFood_hoaqua"/>
+</menu>

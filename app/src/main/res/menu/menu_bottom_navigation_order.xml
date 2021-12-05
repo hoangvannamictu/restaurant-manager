@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_order_table"
+        android:icon="@drawable/ic_order_table_24"
+        android:title="@string/dat_ban"/>
+
+    <item android:id="@+id/menu_requirement_food"
+        android:icon="@drawable/ic_list_requirement_food_24"
+        android:title="@string/ds_yeu_cau"/>
+
+</menu>

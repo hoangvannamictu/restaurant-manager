@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="@string/sua_mon"
+        android:background="@color/orange"/>
+
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/ten_mon_detail"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:layout_weight="4"
+                android:id="@+id/edtEditName_food"
+                android:textSize="25sp"
+                android:textColor="@color/orange"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/orange"
+                android:background="@drawable/custom_edittext"
+                android:hint="@string/nhap_ten_mon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/so_luong_detail"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:layout_weight="4"
+                android:id="@+id/edtEditAmount_food"
+                android:textSize="25sp"
+                android:textColor="@color/orange"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/orange"
+                android:background="@drawable/custom_edittext"
+                android:hint="@string/nhap_so_luong"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/gia"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:layout_weight="4"
+                android:id="@+id/edtEditPrice_food"
+                android:textSize="25sp"
+                android:textColor="@color/orange"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/orange"
+                android:background="@drawable/custom_edittext"
+                android:hint="@string/nhap_gia"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/trang_thai_detail"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbStatusOn_editFood"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/orange"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:checked="true"
+                    android:textColor="@color/orange"
+                    android:text="@string/con" />
+
+                <RadioButton
+                    android:id="@+id/rbStatusOff_editFood"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/grey"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp"
+                    android:text="@string/het"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/tvEditTag_food"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:text="@string/sua_tag"
+                android:textColor="@color/orange"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btnEditChooseTag_food"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@null"
+                android:text="@string/lua_chon"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEdit_food"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/sua_mon" />
+
+        <Button
+            android:id="@+id/btnQuitDiaLogEdit_food"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/thoat" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="32dp">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!-- Your secondary layout here -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutDetail_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chi_tiet"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditAvt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doi_anh"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="12dp"
+                android:id="@+id/layoutEditGeneralInfo_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sua_thongtin"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="12dp"
+                android:id="@+id/layoutDelete_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xoa"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Your main layout here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgAvt_user"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_account_avt_64"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"/>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="9"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvName_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Nam"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvEmail_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="hoangvannamict@gmail.com"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvDateCreate_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="1/10/2120"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgStatus_user"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_status_on_24"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</androidx.cardview.widget.CardView>

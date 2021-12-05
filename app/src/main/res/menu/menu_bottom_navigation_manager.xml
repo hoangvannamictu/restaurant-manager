@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_payment"
+        android:icon="@drawable/ic_payment_24"
+        android:title="@string/thanh_toan"/>
+
+    <item android:id="@+id/menu_chart"
+        android:icon="@drawable/ic_chart_24"
+        android:title="@string/thong_ke"/>
+
+    <item android:id="@+id/menu_manager"
+        android:icon="@drawable/ic_manager_24"
+        android:title="@string/quan_ly"/>
+</menu>

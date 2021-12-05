@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="@string/thay_doi_email"
+        android:background="@color/orange"/>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtNewEmailAdmin"
+            android:textSize="25sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/orange"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColorHint="@color/orange"
+            android:background="@drawable/custom_edittext"
+            android:hint="@string/nhap_email_moi"/>
+
+        <Button
+            android:id="@+id/btnChangeEmailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/thay_doi" />
+
+        <Button
+            android:id="@+id/btnQuitDiaLogEditEmailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:text="@string/thoat" />
+    </LinearLayout>
+
+</LinearLayout>
